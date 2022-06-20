@@ -47,6 +47,7 @@ struct ContentView: View {
                 // Input Section
                 Section{
                     TextField("Unit", value: $unitInput, format: .number)
+                        .keyboardType(.decimalPad)
                     Picker("Unit input", selection: $pickerInputValue){
                         ForEach(temperatureUnits, id: \.self){
                             Text("\($0)")
