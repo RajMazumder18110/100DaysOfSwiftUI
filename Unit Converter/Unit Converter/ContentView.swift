@@ -72,35 +72,35 @@ struct ContentView: View {
                     if pickerInputValue == "Celsius" {
                         switch pickerOutputValue {
                             case "Fahrenheit":
-                                Text("\(celsiusToFahrenheit.formatted())°F")
+                                Text("\(celsiusToFahrenheit.formatted())° F")
 
                             case "Kelvin":
-                                Text("\(celsiusToKelvin.formatted())°K")
+                                Text("\(celsiusToKelvin.formatted())° K")
 
                             default:
-                                Text("\(unitInput.formatted())°C")
+                                Text("\(unitInput.formatted())° C")
                         }
                     } else if pickerInputValue == "Kelvin" {
                         switch pickerOutputValue {
                             case "Fahrenheit":
-                                Text("\(kelvinToFahrenheit.formatted())°F")
+                                Text("\(kelvinToFahrenheit.formatted())° F")
 
                             case "Kelvin":
-                                Text("\(unitInput.formatted())°K")
+                                Text("\(unitInput.formatted())° K")
 
                             default:
-                            Text("\(kelvinToCelsius.formatted())°C")
+                                Text("\(kelvinToCelsius.formatted())° C")
                         }
                     }else{
                         switch pickerOutputValue {
                             case "Fahrenheit":
-                            Text("\(unitInput.formatted())°F")
+                            Text("\(unitInput.formatted())° F")
 
                             case "Kelvin":
-                                Text("\(fahrenheitToKelvin.formatted())°K")
+                                Text("\(fahrenheitToKelvin.formatted())° K")
 
                             default:
-                                Text("\(fahrenheitToCelsius.formatted())°C")
+                                Text("\(fahrenheitToCelsius.formatted())° C")
                         }
                     }
                 } header: {
@@ -108,6 +108,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Temperature Converter")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
