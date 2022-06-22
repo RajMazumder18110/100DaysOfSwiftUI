@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var coffeeIntake = 1
-    @State private var sleepHoures = 8.0
+    @State private var sleepHours = 8.0
     @State private var wakeUpTime = setWakeUpTime
     @State private var bedTime = Date.now
     
@@ -34,8 +34,8 @@ struct ContentView: View {
             
             Section{
                 Stepper(
-                    "Sleep for \(sleepHoures.formatted()) hours",
-                    value: $sleepHoures, in: 4...12, step: 0.25
+                    "Sleep for \(sleepHours.formatted()) hours",
+                    value: $sleepHours, in: 4...12, step: 0.25
                 )
                 .padding(.vertical, 5)
             } header: {
@@ -96,7 +96,7 @@ struct ContentView: View {
             let hour = (dateComponents.hour ?? 0) * 60 * 60
             let min = (dateComponents.minute ?? 0) * 60
             
-            let prediction = try bedTimeModel.prediction(wake: Double(hour + min), estimatedSleep: Double(sleepHoures), coffee: Double(coffeeIntake))
+            let prediction = try bedTimeModel.prediction(wake: Double(hour + min), estimatedSleep: sleepHours, coffee: Double(coffeeIntake))
             
             bedTime = wakeUpTime - prediction.actualSleep
             
