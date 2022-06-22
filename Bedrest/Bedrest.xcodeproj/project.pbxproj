@@ -9,18 +9,18 @@
 /* Begin PBXBuildFile section */
 		A38E782A2862D8D6002F3E50 /* BedrestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E78292862D8D6002F3E50 /* BedrestApp.swift */; };
 		A38E782C2862D8D6002F3E50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E782B2862D8D6002F3E50 /* ContentView.swift */; };
-		A38E782E2862D8D8002F3E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38E782D2862D8D8002F3E50 /* Assets.xcassets */; };
 		A38E78312862D8D8002F3E50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38E78302862D8D8002F3E50 /* Preview Assets.xcassets */; };
 		A38E78382862E7AF002F3E50 /* BedTime.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A38E78372862E7AE002F3E50 /* BedTime.mlmodel */; };
+		A38E78402862F99C002F3E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38E783F2862F99C002F3E50 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A38E78262862D8D6002F3E50 /* Bedrest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bedrest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38E78292862D8D6002F3E50 /* BedrestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedrestApp.swift; sourceTree = "<group>"; };
 		A38E782B2862D8D6002F3E50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A38E782D2862D8D8002F3E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A38E78302862D8D8002F3E50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A38E78372862E7AE002F3E50 /* BedTime.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = BedTime.mlmodel; sourceTree = "<group>"; };
+		A38E783F2862F99C002F3E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 				A38E78292862D8D6002F3E50 /* BedrestApp.swift */,
 				A38E782B2862D8D6002F3E50 /* ContentView.swift */,
 				A38E78372862E7AE002F3E50 /* BedTime.mlmodel */,
-				A38E782D2862D8D8002F3E50 /* Assets.xcassets */,
+				A38E783F2862F99C002F3E50 /* Assets.xcassets */,
 				A38E782F2862D8D8002F3E50 /* Preview Content */,
 			);
 			path = Bedrest;
@@ -128,8 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38E78402862F99C002F3E50 /* Assets.xcassets in Resources */,
 				A38E78312862D8D8002F3E50 /* Preview Assets.xcassets in Resources */,
-				A38E782E2862D8D8002F3E50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

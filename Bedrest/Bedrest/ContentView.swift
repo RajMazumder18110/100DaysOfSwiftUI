@@ -79,8 +79,10 @@ struct ContentView: View {
             .frame(maxWidth: .infinity)
         }
         .font(.headline)
-        .alert("Opps!! Error occured", isPresented: $showingAleart){
-            Button("Ok"){}
+        .alert("Opps!!", isPresented: $showingAleart){
+            Button("Retry"){}
+        } message: {
+            Text("An error occured during the sleep time prediction")
         }
         .onAppear{
             calculateBedTime()
@@ -101,7 +103,7 @@ struct ContentView: View {
             bedTime = wakeUpTime - prediction.actualSleep
             
         } catch{
-            print("Error occured")
+            print("Error occured\(error)")
             showingAleart = true
         }
     }
