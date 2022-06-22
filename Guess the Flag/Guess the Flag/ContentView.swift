@@ -48,16 +48,13 @@ struct ContentView: View {
                                 Button{
                                     checkAns(number)
                                 } label: {
-                                    Image(countries[number])
-                                        .renderingMode(.original)
-                                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                                        .shadow(radius: 10)
+                                    FlagImageView(flagName: countries[number])
                                 }
                             }
                         }
                     }
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 40)
+                    .padding(.vertical, 30)
                     .background(.thinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.1), radius: 10)
